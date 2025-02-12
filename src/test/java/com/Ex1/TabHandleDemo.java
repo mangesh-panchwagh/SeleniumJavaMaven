@@ -41,11 +41,11 @@ public class TabHandleDemo {
 				Thread.sleep(2000);
 				driver.findElement(By.id("lastName")).sendKeys("Panchwagh");
 				Thread.sleep(2000);
-				//driver.close();
+				driver.close();
 			}	
 		}
-		//driver.switchTo().window(parentWindowHandle);
-		//driver.findElement(By.id("name")).sendKeys("Reddy");
+		driver.switchTo().window(parentWindowHandle);
+		driver.findElement(By.id("name")).sendKeys("Reddy");
 		
 		Thread.sleep(3000);
 		
