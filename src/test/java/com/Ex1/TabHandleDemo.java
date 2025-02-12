@@ -30,7 +30,7 @@ public class TabHandleDemo {
 		
 		driver.findElement(By.id("newTabBtn")).click();
 		Thread.sleep(5000);
-		Set<String> AllWindowHandles = driver.getWindowHandles(); 
+		Set<String> AllWindowHandles = driver.getWindowHandles();
 		
 		for (String handle : AllWindowHandles) {
 			System.out.println(handle);
