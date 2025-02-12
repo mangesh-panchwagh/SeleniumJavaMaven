@@ -3,6 +3,7 @@ package com.Ex1;
 import java.time.Duration;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,12 +37,13 @@ public class TabHandleDemo {
 			if(!handle.equals(parentWindowHandle)) {
 				Thread.sleep(3000);
 				driver.switchTo().window(handle);
-				Thread.sleep(3000);
-				driver.findElement(By.id("firstName")).sendKeys("Mangesh");
+				driver.findElement(By.id("alertBox")).click();
+				Alert simpleAlert = driver.switchTo().alert();
+				System.out.println("Simple Alert Text Message : " + simpleAlert.getText());
 				Thread.sleep(2000);
-				driver.findElement(By.id("lastName")).sendKeys("Panchwagh");
+				simpleAlert.accept();
 				Thread.sleep(2000);
-				driver.close();
+				System.out.println(driver.findElement(By.id("output")).getText());
 			}	
 		}
 		driver.switchTo().window(parentWindowHandle);
