@@ -15,5 +15,6 @@ public class Locators {
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("mangesh013");
 		
+		
 	}
 }
