@@ -11,7 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+// Handling multiple windows
 // Here we will handle multiple window and switch between two windows
+// First get the parent window handle
+// then store all the window handles in the set collection.
+// to iterate over the set window handles, convert it to List implemented class
 public class WindowHandleDemo2 {
 
 	public static void main(String[] args) throws Exception {
@@ -27,8 +31,6 @@ public class WindowHandleDemo2 {
 		driver.findElement(By.id("newWindowsBtn")).click();
 		Set<String> allWindowHandles = driver.getWindowHandles();
 		List<String> windowStrings = new ArrayList<>(allWindowHandles);
-		
-		
 		
 		String reqWindow2 = windowStrings.get(2);
 		driver.switchTo().window(reqWindow2);
