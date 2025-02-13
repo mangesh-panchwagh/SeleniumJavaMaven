@@ -14,6 +14,7 @@ public class DesiredCaps {
 		WebDriverManager.chromedriver().setup();
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setAcceptInsecureCerts(true);
+		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
 		options.addArguments("--incognito");

@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 // Open multiple Tabs and Windows
+// This is pending : 13 Feb 2025 Thursday
 public class WindowHandleDemo4 {
 
 	public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class WindowHandleDemo4 {
 		driver.findElement(By.id("newTabsWindowsBtn")).click();
 		Set<String> allWindowAndTabHandles = driver.getWindowHandles();
 		for (String handles : allWindowAndTabHandles) {
-			System.out.println("handle : " + handles + " Title : " + driver.getTitle() + "\n");
+			System.out.println("handle : " + handles + " Title : " + driver.getTitle());
 		}
 		
 		List<String> allWindowAndTabHandlesList = new ArrayList<>(allWindowAndTabHandles);
