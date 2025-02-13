@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 // Handling multiple tabs
-//Here we will handle tabs and switch between two tabs
+//Here we will handle multiple tabs and switch between them
 public class WindowHandleDemo3 {
 
 	public static void main(String[] args) throws Exception {
