@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+// Open multiple Tabs
 // Handling multiple tabs
 //Here we will handle multiple tabs and switch between them
 public class WindowHandleDemo3 {

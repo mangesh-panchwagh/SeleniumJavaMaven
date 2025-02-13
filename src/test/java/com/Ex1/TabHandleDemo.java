@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+// Open new tab
 // getWindowHandle() will return one window handle
 // getWindowHandles() will returns the set of unique string value
 // Set will allow only unique string values as it does not allows duplicates unlike Lists

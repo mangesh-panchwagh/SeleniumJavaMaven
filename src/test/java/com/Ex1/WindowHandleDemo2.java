@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+// Open Multiple Windows
 // Handling multiple windows
 // Here we will handle multiple window and switch between two windows
 // First get the parent window handle
