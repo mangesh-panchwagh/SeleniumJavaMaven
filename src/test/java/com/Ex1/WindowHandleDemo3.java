@@ -42,6 +42,7 @@ public class WindowHandleDemo3 {
 		System.out.println("Swithced to : " + driver.getTitle());
 		Thread.sleep(2000);
 		driver.findElement(By.id("firstName")).sendKeys("Mangesh");
+		System.out.println("Entered firstname \n");
 		
 		String tab3 = allTabString.get(2);
 		driver.switchTo().window(tab3);
@@ -53,15 +54,18 @@ public class WindowHandleDemo3 {
 		confirmationAlert.accept();
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.id("output")).getText());
+		System.out.println("Alert action performed \n");
 		
 		driver.switchTo().window(parentWindowHandle);
 		System.out.println("Switched to : " + driver.getTitle());
 		driver.findElement(By.id("name")).sendKeys("Reddy");
 		Thread.sleep(2000);
+		System.out.println("Entered username \n");
 		
 		driver.switchTo().window(tab2);
 		System.out.println("Swithced to : " + driver.getTitle());
 		Thread.sleep(2000);
 		driver.findElement(By.id("lastName")).sendKeys("Panchwagh");
+		System.out.println("Entered lastname \n");
 	}
 }
