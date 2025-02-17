@@ -29,7 +29,7 @@ public class TabHandleDemo {
 		String parentWindowHandle = driver.getWindowHandle();
 		System.out.println("Parent window : " + parentWindowHandle);
 		
-		driver.findElement(By.id("newTabBtn")).click();
+		driver.findElement(By.id("newTabBtn")).click();		// Moved to new tab
 		Thread.sleep(5000);
 		Set<String> AllWindowHandles = driver.getWindowHandles();
 		

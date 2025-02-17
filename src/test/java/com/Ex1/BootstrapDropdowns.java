@@ -9,7 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/*
+Single selection dropdown link : https://www.jquery-az.com/bootstrap4/demo.php?ex=79.0_1
+Multi-selection dropdown link : https://www.jquery-az.com/boots/demo.php?ex=63.0_2 
+*/
 public class BootstrapDropdowns {
 
 	public static void main(String[] args) {
@@ -28,23 +31,21 @@ public class BootstrapDropdowns {
 //		driver.findElement(By.id("btnDropdownDemo")).click();
 //		List<WebElement> optins = driver.findElements(By.xpath("//div[contains(@class,'dropdown-menu show')]/a"));
 //		
-//		int optionCount = 0;
 //		for (WebElement option : optins) {
 //			String optionText = option.getText();
 ////			if(optionText.equals("CSS")) {
 ////				option.click();
 ////				break;
 ////			}
-//			optionCount++;
 //			System.out.println(optionText);
 //			
 //		}
-//		System.out.println("Total options : " + optionCount);
+//		driver.quit();
 		
 		// Multiselect drop down
 		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
-		driver.findElement(By.xpath(""));
+		driver.findElement(By.xpath("https://www.jquery-az.com/boots/demo.php?ex=63.0_2"));
 		
-		driver.quit();
+		
 	}
 }

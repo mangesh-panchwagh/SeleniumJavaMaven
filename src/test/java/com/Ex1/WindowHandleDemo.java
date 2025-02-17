@@ -28,7 +28,7 @@ public class WindowHandleDemo {
 		String parentWindowHandle = driver.getWindowHandle();
 		System.out.println("Parent window : " + parentWindowHandle);
 		
-		driver.findElement(By.id("newWindowBtn")).click();
+		driver.findElement(By.id("newWindowBtn")).click();	// Move to new window pop-up
 		Thread.sleep(5000);
 		Set<String> AllWindowHandles = driver.getWindowHandles(); 
 		

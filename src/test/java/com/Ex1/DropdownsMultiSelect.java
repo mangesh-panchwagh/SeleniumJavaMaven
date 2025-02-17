@@ -62,7 +62,6 @@ public static void main(String[] args) throws Exception {
 		
 		System.out.println();
 		System.out.println("SelectedOption");
-		System.out.println(select.getFirstSelectedOption().getText());
-		
+		System.out.println(select.getFirstSelectedOption().getText());	
 	}
 }

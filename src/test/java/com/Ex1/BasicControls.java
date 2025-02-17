@@ -12,7 +12,7 @@ public class BasicControls {
 
 	public static void main(String[] args) throws Exception {
 		WebDriverManager.chromedriver().setup();
-			
+		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
