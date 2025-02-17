@@ -44,8 +44,24 @@ public class BootstrapDropdowns {
 		
 		// Multiselect drop down
 		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
-		driver.findElement(By.xpath("https://www.jquery-az.com/boots/demo.php?ex=63.0_2"));
+		WebElement dropDownBtn = driver.findElement(By.xpath("//button[contains(@class,'multiselect ')]"));
+		dropDownBtn.click();
 		
-		
+		List<WebElement> options = driver.findElements(By.xpath("//ul[contains(@class,'multiselect-container')]/li[not(@class='multiselect-item multiselect-group')]/a/label"));
+		for (WebElement option : options) {
+			WebElement optionCheck = option.findElement(By.tagName("input"));
+			String optionsText = option.getText();
+			if(optionsText.equals("Bootstrap"))
+				option.click();
+			if(optionsText.equals("Java"))
+				optionCheck.click();
+			if(optionsText.equals("CSS") && option.findElement(By.tagName("input")).isSelected()){
+				optionCheck.click();
+			//System.out.println(optionsText);
+			}
+		}		
+		if(Boolean.valueOf(dropDownBtn.getAttribute("aria-expanded")))
+			dropDownBtn.click();
+		//driver.quit();
 	}
 }
