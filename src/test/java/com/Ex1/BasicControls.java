@@ -19,7 +19,7 @@ public class BasicControls {
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.hyrtutorials.com/p/basic-controls.html");
 		driver.manage().window().maximize();
-		
+		//options.addArguments("--headless");
 		// Text box
 		driver.findElement(By.id("firstName")).clear();
 		driver.findElement(By.id("firstName")).sendKeys("HYR Tutorials");
