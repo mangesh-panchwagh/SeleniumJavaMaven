@@ -18,7 +18,7 @@ public class PermissionPopups {
 		HashMap<String, Object> prefs = new HashMap<String, Object>();
 		
 		
-		contentsetting.put("notification", 0);
+		contentsetting.put("notification", 1);
 		profile.put("managed_defaul_content_setting", contentsetting);
 		prefs.put("profile", profile);
 		options.setExperimentalOption("prefs", prefs);
