@@ -1,0 +1,10 @@
+xpath and css selectors are used to find the dynamic elements.
+1) Prformance
+2) User friendliness
+3) Element Identification
+
+Performance is the major factor when finding element.
+
+Xpath is faster one compared to css selector
+
+xpath supports many functions than css selector
