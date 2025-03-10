@@ -18,7 +18,10 @@ public class ImplicitWaitTest {
 		
 		driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
 		driver.findElement(By.id("btn1")).click();
+		System.out.println("Btn1 is clicked.");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.id("txt1")).sendKeys("Hello");
+		System.out.println("Entered Hello text to input field");
+		//driver.quit();
 	}
 }
