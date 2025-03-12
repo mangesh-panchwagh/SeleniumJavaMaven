@@ -1,5 +1,7 @@
 package com.Ex1;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,5 +24,6 @@ public class DesiredCaps {
 		WebDriver driver = new ChromeDriver(options);
 		options.merge(caps);
 		driver.get("https://google.com/");
+		driver.findElement(By.name("q")).sendKeys("ABC",Keys.ENTER);
 	}
 }
