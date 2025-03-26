@@ -26,7 +26,7 @@ public class JsExecutorDemo {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
-		js.executeScript("alert(\"hello\")");
+		js.executeScript("alert('hello')");
 	}
 
 }
