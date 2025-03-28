@@ -1,4 +1,4 @@
-package interview_questions_selenium;
+package com.interview_questions_selenium;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
