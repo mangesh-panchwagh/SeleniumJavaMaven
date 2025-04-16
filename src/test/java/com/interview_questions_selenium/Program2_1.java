@@ -61,6 +61,7 @@ public class Program2_1 {
 		*/
 		
 		WebDriverManager.chromedriver().setup();
+		// Here instead of WebDriver we have taken ChromeDriver
 		ChromeDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");

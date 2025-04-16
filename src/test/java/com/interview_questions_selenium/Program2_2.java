@@ -45,10 +45,17 @@ public class Program2_2 {
 		String title = (String) jsExecutor.executeScript("return document.title");
 		System.out.println(title);
 		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("document.getElementById('APjFqb').style.border='2px solid red'");
+		js.executeScript("document.getElementById('APjFqb').style.background='yellow'");
+		
 		TakesScreenshot takeScreenshot = (TakesScreenshot)driver;
 		File file = takeScreenshot.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(file, new File("./Screenshots/Img1.png"));
 		
-		driver.quit();
+		//driver.quit();
+		
+		js.executeScript("document.getElementById('APjFqb').style.border='none'");
+		js.executeScript("document.getElementById('APjFqb').style.background='none'");
 	}
 }
