@@ -46,10 +46,10 @@ public class BrokenLink {
 			httpURLConnection.setConnectTimeout(5000);
 			httpURLConnection.connect();
 //		
-//			if(httpURLConnection.getResponseCode() == 200)
-//				System.out.println(linkURL + " - " + httpURLConnection.getResponseMessage());
-//			else
-//				System.err.println(linkURL + " - " + httpURLConnection.getResponseCode());
+			if(httpURLConnection.getResponseCode() == 200)
+				System.out.println(linkURL + " - " + httpURLConnection.getResponseMessage());
+			else
+				System.err.println(linkURL + " - " + httpURLConnection.getResponseCode());
 			
 			if(httpURLConnection.getResponseCode() != 200 ) {
 				
