@@ -6,6 +6,7 @@ import org.testng.ITestResult;
 
 public class ITestListenerClass implements ITestListener {
 
+	// Run from testng.xml file. It will have result of Test runs : 4, Passes : 1, Failure : 2, Skips : 1
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("onTestStart");
